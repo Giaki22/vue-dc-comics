@@ -70,14 +70,15 @@ export default {
 ul{
     display: flex;
     flex-flow: row nowrap;
-    gap: .625rem;
+    gap: var(--s);
     list-style: none;
 }
 li{
     color: var(--secondary-text-color);
-    font-size: .75rem;
+    font-size: 12px;
     font-weight: 700;
-    border-bottom: .1875rem solid transparent;
+    border-bottom: 3px solid transparent;
+    transition: all .3s ease-out;
 }
 .active, li:hover{
     border-bottom-color: var(--primary-color);
