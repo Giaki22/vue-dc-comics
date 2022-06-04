@@ -46,6 +46,8 @@ nav{
 }
 footer{
     background-image: url('../../assets/img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container{
     margin: 0 auto;
