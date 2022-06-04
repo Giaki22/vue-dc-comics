@@ -19,7 +19,7 @@ export default {
 header{
     margin: auto;
     max-width: 75rem;
-    padding: 0 1.25rem;
+    padding: 0 var(--m);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;

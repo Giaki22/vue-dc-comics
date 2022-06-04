@@ -1,18 +1,20 @@
 <template>
   <div id="app">
     <OmainHeader></OmainHeader>
-    <main></main>
+    <OmainMain></OmainMain>
     <footer></footer>
   </div>
 </template>
 
 <script>
 import OmainHeader from './components/Organisms/OmainHeader.vue'
+import OmainMain from './components/Organisms/OmainMain.vue'
 
 export default {
   name: 'App',
   components: {
-    OmainHeader
+    OmainHeader,
+    OmainMain
 }
 }
 </script>
