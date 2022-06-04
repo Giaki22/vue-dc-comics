@@ -1,20 +1,22 @@
 <template>
   <div id="app">
-    <BasicLogo></BasicLogo>
+    <OmainHeader></OmainHeader>
+    <main></main>
+    <footer></footer>
   </div>
 </template>
 
 <script>
-import BasicLogo from './components/basicLogo.vue';
+import OmainHeader from './components/Organisms/OmainHeader.vue'
 
 export default {
   name: 'App',
   components: {
-    BasicLogo
+    OmainHeader
 }
 }
 </script>
 
 <style lang="scss">
-@import './assets/style/global.scss'
+@import './assets/style/global.scss';
 </style>
