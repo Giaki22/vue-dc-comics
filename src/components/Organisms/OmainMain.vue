@@ -1,8 +1,11 @@
 <template>
     <main>
+        <AmainJumbo></AmainJumbo>
         <div class="content">
-            <div class="container">
-                <MmainContent></MmainContent>
+            <div class="container relative">
+                <AloadMoreButton :text="'CURRENT SERIES'" class="currentSeries"></AloadMoreButton>
+                <McomicsNav></McomicsNav>
+                <AloadMoreButton :text="'LOAD MORE'" class="loadMore"></AloadMoreButton>
             </div>
         </div>
         <nav class="nav">
@@ -20,14 +23,16 @@
 </template>
 
 <script>
-import MmainContent from '../Molecules/MmainContent.vue';
 import MsecondNav from '../Molecules/MsecondNav.vue';
 import MlinksNav from '../Molecules/MlinksNav.vue';
 import AbigLogo from '../Atoms/AbigLogo.vue';
+import AmainJumbo from '../Atoms/AmainJumbo.vue';
+import McomicsNav from '../Molecules/McomicsNav.vue';
+import AloadMoreButton from '../Atoms/AloadMoreButton.vue';
 
 export default {
     name: "OmainMain",
-    components: { MmainContent, MsecondNav, MlinksNav, AbigLogo }
+    components: { MsecondNav, MlinksNav, AbigLogo, AmainJumbo, McomicsNav, AloadMoreButton}
 }
 </script>
 
@@ -57,5 +62,24 @@ footer{
 .container.footer{
     display: flex;
     flex-flow: row nowrap;
+}
+.relative{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.currentSeries{
+    position: absolute;
+    top: -3.75rem;
+    left: 1.25rem;
+    width: 9.375rem;
+}
+.loadMore{
+    width: 12.5rem;
+}
+.loadMore:hover{
+    cursor: pointer;
 }
 </style>
