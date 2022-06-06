@@ -20,16 +20,14 @@ main{
     display: flex;
     flex-flow: column nowrap;
     gap: .625rem;
+    padding: .625rem;
     img{
-        width: 9.375rem;
-        height: 9.375rem;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
         object-fit: cover;
         object-position: top;
         transition: box-shadow .2s ease-out;
-        // &:hover{
-        //     box-shadow: 15px 15px 49px 5px rgba(0,0,0,0.7);
-        //     cursor: pointer;
-        // }
     }
     h6{
         color: var(--primary-text-color);
