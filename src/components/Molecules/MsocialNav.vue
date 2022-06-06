@@ -23,7 +23,7 @@ main{
 
     h2{
         color: var(--primary-color);
-        font-size: var(--s);
+        font-size: 1rem;
     }
 
     img{

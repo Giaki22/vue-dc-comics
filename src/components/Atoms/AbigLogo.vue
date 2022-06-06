@@ -10,8 +10,8 @@ export default {
 
 <style scoped>
 img{
-    width: 500px;
-    height: 350px;
-    object-fit: cover;
+    width: auto;
+    height: 100%;
+    object-position: 0rem -4.375rem;
 }
 </style>

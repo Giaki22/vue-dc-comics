@@ -10,8 +10,9 @@
  
  <style scoped>
  .signup{
-    border: 2px solid var(--primary-color);
+    border: .125rem solid var(--primary-color);
     color: white;
+    font-size: .75rem;
     font-weight: 600;
     padding: var(--xs);
     background-color: transparent;

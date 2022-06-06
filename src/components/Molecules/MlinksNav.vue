@@ -58,6 +58,6 @@ li{
 }
 li:hover{
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--accent-text-color);
 }
 </style>
